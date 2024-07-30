@@ -8,3 +8,17 @@ This repository houses the codebase for a sophisticated web application designed
 - **Graphs and Visualizations:** Includes charts and graphs to visually represent the correlation data, enhancing interpretability and insights.
 - **Downloadable Styled Excel Reports:** Generates and allows users to download well-formatted Excel reports, enhancing data presentation and usability.
 The repository includes all necessary scripts and resources to deploy the web app, ensuring a seamless setup for developers and analysts aiming to leverage this tool for advanced correlation analysis and strategic decision-making.
+
+the app can be easily run via:
+```bash
+list_of_packages = c("shiny","shinythemes","readxl","tidyquant","TTR","stringr",
+                     "tidyverse","ggcorrplot","corrr","xlsx","devtools","DT")
+lapply(list_of_packages, 
+       function(x) if(!require(x,character.only = TRUE)) install.packages(x))
+runGitHub(
+  'stock-correlapp',
+  username = 'statisticsguru1',
+  ref = "main",
+  subdir="corrapp"
+  )
+```
