@@ -11,10 +11,8 @@ The repository includes all necessary scripts and resources to deploy the web ap
 
 the app can be easily run via:
 ```bash
-list_of_packages = c("shiny","shinythemes","readxl","tidyquant","TTR","stringr",
-                     "tidyverse","ggcorrplot","corrr","xlsx","devtools","DT")
-lapply(list_of_packages, 
-       function(x) if(!require(x,character.only = TRUE)) install.packages(x))
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(foreach,shiny,shinythemes,readxl,tidyquant,TTR,stringr,tidyverse,ggcorrplot,corrr,xlsx,devtools,DT,rsconnect)
 runGitHub(
   'stock-correlapp',
   username = 'statisticsguru1',
