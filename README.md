@@ -1,4 +1,4 @@
-**Correlation Analysis Web App Repository Description**
+**Correlation Analysis Web App**
 
 This repository houses the codebase for a sophisticated web application designed to analyze and report correlations among ASX-listed Uranium and Lithium companies over the past year. The app provides insightful visualizations and detailed reports, facilitating a deeper understanding of stock performance and interrelations within these sectors.
 
